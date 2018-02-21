@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Giovanny Mora Chaparro - Evaluación final JavaScript: lo esencial</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name="author" content="Giovanny Mora"/>
+	<meta name="keywords" content="html,css,giovanny,frontend"/>
+	<meta name="description" content="Evaluación final JavaScript: lo esencial"/>	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<h1 class="mainTitle">
+			<img src="image/nombre.svg" alt="" alt="Giovanny Mora Chaparro" title="Giovanny Mora Chaparro">
+		</h1>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item ">
+				    	<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+				  	</li>
+				  	<li class="nav-item active">
+				    	<a class="nav-link " href="evaluacion.html">Evaluación</a>
+				  	</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="row form-card">
+			<div class="col-sm-12 col-md-4 ">
+				<form id="registrarUsuario" class="card form-card">
+				<div class="form-group">
+					<label for="codigo">Código</label>
+					<input type="text" class="form-control" id="codigo" placeholder="Ingrese el código" required>
+				</div>
+				<div class="form-group">
+					<label for="nombre">Nombre</label>
+					<input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre y apellido" required>
+				</div>
+				<div class="form-group">
+					<label for="nota">Nota</label>
+					<input type="text" class="form-control" id="nota" placeholder="Ingrese la nota" required>
+				</div>
+				<button type="submit" class="btn btn-outline-info">Registrar</button>
+				</form>
+			</div>
+
+			<div class="col-sm-12 col-md-8">
+				<div class="table-responsive">
+					<table class="table table-hover">
+					  <thead class="thead-light">
+					    <tr>
+					    	<th scope="col">Código</th>
+					      	<th scope="col">Nombre</th>
+					      	<th scope="col">Nota</th>
+					    </tr>
+					  </thead>
+					  <tbody id="estudiantes-tabla">
+					   
+					  </tbody>
+					</table>			
+				</div>
+			</div>		
+		</div>
+
+		<hr/><br/>
+		
+		<div class="row">
+			<div class="col-sm-12 col-md-4 text-center">
+				<h4 >Calificación más alta.</h4>
+				<p>Si desea conocer al estudiante con la calificación más alta haga clic aquí. </p>
+				<button id="hightScore" class="btn btn-outline-success">Calificación más alta</button><br/><br/>
+				<p id="mejorNota"></p>
+			</div>
+			<div class="col-sm-12 col-md-4 text-center">
+				<h4 >Calificación más baja.</h4>
+				<p>Si desea conocer al estudiante con la calificación más baja haga clic aquí. </p>
+				<button id="lowestScore" class="btn btn-outline-warning">Calificación más baja</button><br/><br/>
+				<p id="peorNota"></p>
+			</div>
+			<div class="col-sm-12 col-md-4 text-center">
+				<h4 class="text-center">Promedio de calificaciones</h4>
+				<p>Si desea conocer el promedio de las calificaciones haga clic aquí. </p>
+				<button id="average" class="btn btn-outline-dark">Calcular promedio</button><br/><br/>
+				<p id="promedio"></p>			
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3 textCenter Fborder">
+					<h4>Llámame</h4>
+					<span><i class="fa fa-mobile" aria-hidden="true"> </i> (57+1) 301 2036183</span>
+
+				</div>
+				<div class="col-sm-12-center col-md-3 textCenter Fborder">
+					<h4>Contacto</h4>
+					<span><i class="fa fa-envelope-o" aria-hidden="true"> </i> <a href="mailto:giovannymora9@gmail.com">giovannymora9@gmail.com</a></span>
+
+				</div>
+				<div class="col-sm-12-center col-md-3 textCenter Fborder">
+					<h4>Sígueme</h4>
+					 <a href="https://co.linkedin.com/in/giovanny-mora-95620a33" target="_blank">
+					 	<i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+					 <a href="https://twitter.com/g_morac" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> </i></a>
+					 
+					
+
+				</div>
+				<div class="col-sm-12-center col-md-3 textCenter Fborder">
+					<h4>Gmorac </h4>
+					<span><i class="fa fa-copyright" aria-hidden="true"> </i> Todos los derechos reservados</span>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- <script src="js/nota.js"></script> -->
+	<script src="js/notas.js"></script>
+
+</body>
+</html>

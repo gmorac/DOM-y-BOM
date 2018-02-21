@@ -1,0 +1,78 @@
+@import 'bootstrap.css';
+@import 'font-awesome.css';
+
+body {
+	background: #fbf9f9;
+	color: #4b4848;
+}
+footer {
+	background: #4b4848;
+	bottom: 0;
+	color: white;
+	font-size: .9em;
+	left: 0;
+	padding: 10px 0;
+	/* position: fixed; */
+	right: 0;
+}
+footer a {
+	color: white;
+}
+footer a:hover {
+	color: #b8daff;
+}
+footer a:hover {
+	color: #db8e2de0;
+}
+textarea {
+	resize: none;
+}
+.form-card {
+	padding: 1em .5em;
+}
+.infoTitleName {
+	font-size: 1.5em;
+}
+.infoTitleDate {
+	font-size: 1.2em;
+}
+.mainTitle {
+	margin: 16px 0;
+	text-align: center;
+}
+.nav a {
+	color: #4b4848;
+}
+.nav a:hover {
+	color: #db8e2de0;
+}
+.profile {
+	border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px ){
+	figure {
+		text-align: center;
+	}
+	footer {
+		background: #4b4848;
+		bottom: 0;
+		color: white;
+		left: 0;
+		padding: 10px 0;
+		position: static ;
+		right: 0;
+	}
+	.textCenter {
+		text-align: center !important;
+	}
+	.Fborder {
+		border-bottom: 1px solid #fbf9f9;
+		padding: 3px 0;
+
+	}
+}
+
+@media screen and (min-width:  769px) {
+}
